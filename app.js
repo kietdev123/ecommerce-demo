@@ -520,6 +520,101 @@ const CATEGORY_ICONS = {
   accessory: "assets/icons8-other-50.png"
 };
 
+const PRODUCT_IMAGES = {
+  p01: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-15-pro-256gb.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-15-pro-256gb_3_.jpg",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-15-pro-256gb_4_.jpg",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-15-pro-256gb_6_.jpg"
+  ],
+  p02: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-s24-ultra_2__1_1_1.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-s24-ultra_14__2_1.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung_galaxy_s24_ultra_512gb_-_1_1_1.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung_galaxy_s24_ultra_256gb_-_8_1_1_1.png"
+  ],
+  p03: [
+    "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRmKIg7_GD-ENU5J8ILvN_CnriK0oPtrWyrwda3D3JyZc6PSGweQRjYVQ4e4d2Ir8jnZ9j3GE3o-UgP9wpUFn1qiXG5DjWU8guUQF8uFTnZ93uwjxLrYHy33bJ8n9StG7mA7SR5ru9Zhw&usqp=CAc",
+    "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTXkAor4-IuxDCOtEYv3u_7lWP0CSopy66ObDEX7HRr1WJihsdVqpx2H3M3FMMq9aDLHCzsvPfXHrN8V7D7Q772F4MhAZaXXDZAUVJVKb9GijUGxiKx1vFrlm9w2gUBQ5p8gLHerBOfJg&usqp=CAc",
+    "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTDeIQfPLzhWAjm4kD_hiyha3VV7ZWryOrYd9flzJyu4zbX4hA-ihoDhi7hklKpiHNyXKlRn1OqKLUYybZoTv6nWP1FZE4DCyWuCS2rZ3b7I75Gb1MmfoySYYzfaZpkMIe5sqi6EyE&usqp=CAc",
+    "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQCqkf7SuJ0sN8lwPIP0nqZf7GY_pTt4WfixkrBfV5GTadRcejYbcMpPhg7efUJ27V_OEYzZMDjSzqtKzSij0ZNRvHZLOb0Av5QdpIDh1Ji3Jw4Nm8ntZcPlt0l1qf6uwi4V3C6QcwthA&usqp=CAc"
+  ],
+  p04: [
+    "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS58pWe-g4TzeVowprK8kxmYjrVnP19kzH9ABQd9rJI7COKaf3WPswf9ijSt5sARpPYED9tH4pBMBvGQJ8pHocLMb317Pb1ymKnlkXB9eyyqkQdGVKU-E3953Ya6X6_TuA9P_OcMhdkPg&usqp=CAc",
+    "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT556-tHadPzTzHCpnLiYNTYYvAcBoKCiV1Zip1niiHaGsR9GB86J3HSJ-4N77HMzN6XxqMkoyKBS_ZPQquRrpoMLfwdXIr0vlVuxzRphIsKIq_My4Mtuf1jC76eXgE0W1DNpyIurU&usqp=CAc",
+    "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSaKqn9pFfk6q9Q4FT2rG2v3umltePM_k-ZKQ867LttC6xD3F6HYwzJLijoEM14T8wu8SNWP9p21eMo1reeu6uKHfz0GX6_fOfiWHlv99uMr5aIirae9e-5GGO96r89SSnk62p-dQ&usqp=CAc",
+    "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQzgdExS6a_wuyH1YSviJv04nl1_-nN5TlC_I02izWMYf_CHqumMR4maMqHfj_O_-RwlnBZzDcDeInhQc2jrAbmZDHNdZPCYjgk5YmsMVyl8jTrwnGdTOOs6oUBsCnGH0KkLg6hpA&usqp=CAc"
+  ],
+  p05: [
+    "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRxQAATzECMb412uzboUxankBVO66e4s-aMMs1qslfQlEbOy6OP7mIHbjcDO2TSxBgE5SbMV_OTA0VqCDcq84BFkLq3k8DY1EcM3ro3d2snOffyNbCLc47kRshETGxoPw5yfDkiHjE&usqp=CAc",
+    "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS5JhyRCheub1M2n1G-OztKm0bPIW6nnX1yYfZ9xqFMadq58iHe1sedD-sKlxsT2uo33gIhkqfCBk7W_jemBVNEUgdNTUnO9sDKAOH-yAVnrvY3tF5Z6ibpLMUaRh4kfsD8yc_O7jo&usqp=CAc",
+    "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTE87hlOUQkPnwweRoKzIr18NRdQFrqmh2SSVkqOj-0sbDnPitoJbQlgI6rtb2vZfwRuz_IDjxrrDy6vwY2cfTpWmIz2JBepJ3sF9ty9PHLa5WlT35iPHaj1jJnctEpuU9f7NrUWA&usqp=CAc",
+    "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRRW2y1qh1DhWFFUmFqdU0qcqIFZ6FZ50SqXdyXgyQF-1hAamuXA99gAlgY-AaY58Mj1duvcxHZ2hzFC7w-Qvg7jNmHBgU7R79IQgW-_cdXNyT5fGHq9Kg-Ffv3Ehwgw3r6Y5ey50w&usqp=CAc"
+  ],
+  p06: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_3__7_102.png"
+  ],
+  p07: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/s/ssss_1__81.png"
+  ],
+  p08: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_16__6_106_3.png"
+  ],
+  p09: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/ipad-air-6-m2-11-inch_2__1_1.jpg"
+  ],
+  p10: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-tab-s9-fe-mint-3_2_1_1_1.png"
+  ],
+  p12: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_4__7_240.png"
+  ],
+  p13: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/v/e/venu3_of_2000-01_1.png"
+  ],
+  p14: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/a/i/airpods_pro_2_sep24_pdp_image_position_2__vn-vi.jpg"
+  ],
+  p15: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/a/tai-nghe-chup-tai-sony-wh-1000xm5.png"
+  ],
+  p16: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/a/tai-nghe-khong-day-jbl-tune-beam-2-xanh_5_.png"
+  ],
+  p17: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-anker-soundcore-boom-go-3i_8_.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-anker-soundcore-boom-go-3i_11_.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-anker-soundcore-boom-go-3i_9_.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-anker-soundcore-boom-go-3i_7_.png"
+  ],
+  p18: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/h/chuot-khong-day-bluetooth-logitech-mx-master-3s_2_.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/h/chuot-khong-day-bluetooth-logitech-mx-master-3s_3_.png"
+  ],
+  p19: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-1_1.jpg"
+  ],
+  p20: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-s26-ultra-5.jpg"
+  ],
+  p21: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_495_61_.png"
+  ],
+  p22: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_3__7_228.png"
+  ],
+  p23: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_23__2_51.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_24__2_46.png"
+  ],
+  p24: [
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/a/tai-nghe-samsung-galaxy-buds-3-pro_5_.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/a/tai-nghe-samsung-galaxy-buds-3-pro_2.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/a/tai-nghe-samsung-galaxy-buds-3-pro_7_.png",
+    "https://cdn2.cellphones.com.vn/insecure/rs:fill:58:58/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/a/tai-nghe-samsung-galaxy-buds-3-pro_16_.png"
+  ]
+};
+
 const money = new Intl.NumberFormat("vi-VN", { style: "currency", currency: "VND" });
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
@@ -537,7 +632,15 @@ function discountPercent(product) {
   return Math.round((1 - product.price / product.oldPrice) * 100);
 }
 
+function normalizeImageUrl(url, width, height) {
+  if (!url) return "";
+  return url.replace(/\/rs:fill:\d+:\d+\//, `/rs:fill:${width}:${height}/`);
+}
+
 function imageFor(product, index = 0, width = 700, height = 520) {
+  const images = PRODUCT_IMAGES[product.id] || [];
+  const selected = images[index] || images.find(Boolean);
+  if (selected) return normalizeImageUrl(selected, width, height);
   return `https://picsum.photos/seed/nova-${product.seed}-${index}/${width}/${height}`;
 }
 
