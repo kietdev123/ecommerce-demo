@@ -183,6 +183,12 @@ button {
   font-weight: 700;
 }
 
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
 .nav-links a:hover,
 .nav-links .active {
   color: var(--brand-strong);
@@ -335,6 +341,12 @@ button {
   background: var(--surface);
   box-shadow: 0 8px 22px rgba(24, 32, 42, 0.05);
   transition: 0.18s ease;
+}
+
+.category-tile img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
 }
 
 .category-tile:hover {
@@ -846,6 +858,18 @@ textarea.input {
   line-height: 1.55;
 }
 
+.social-link {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-link img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
 .toast {
   position: fixed;
   right: 18px;
@@ -944,10 +968,17 @@ textarea.input {
   border: 1px solid var(--line);
   border-radius: 999px;
   color: #fff;
-  background: var(--brand);
+  background: #fff;
   box-shadow: var(--shadow);
   font-size: 0.78rem;
   font-weight: 850;
+}
+
+.floating-contact img,
+.scroll-top img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 
 .scroll-top {

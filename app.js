@@ -511,6 +511,15 @@ const CONTACT = {
   map: "https://maps.google.com/?q=123+Nguyen+Hue+Quan+1+TP+Ho+Chi+Minh"
 };
 
+const CATEGORY_ICONS = {
+  phone: "assets/icons8-iphone-50.png",
+  laptop: "assets/icons8-laptop-50.png",
+  tablet: "assets/icons8-tablet-50.png",
+  smartwatch: "assets/icons8-smartwatch-50.png",
+  audio: "assets/icons8-headphones-50.png",
+  accessory: "assets/icons8-other-50.png"
+};
+
 const money = new Intl.NumberFormat("vi-VN", { style: "currency", currency: "VND" });
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
@@ -641,11 +650,11 @@ function renderShell() {
       </div>
     </div>
     <div class="floating-contact" aria-label="Liên hệ nhanh">
-      <a href="${CONTACT.map}" target="_blank" rel="noreferrer" title="Bản đồ">Map</a>
-      <a href="${CONTACT.messenger}" target="_blank" rel="noreferrer" title="Messenger">Mes</a>
-      <a href="${CONTACT.zalo}" target="_blank" rel="noreferrer" title="Zalo">Zalo</a>
+      <a href="${CONTACT.map}" target="_blank" rel="noreferrer" title="Bản đồ" aria-label="Bản đồ"><img src="assets/icons8-google-maps-48.png" alt=""></a>
+      <a href="${CONTACT.messenger}" target="_blank" rel="noreferrer" title="Messenger" aria-label="Messenger"><img src="assets/icons8-facebook-48.png" alt=""></a>
+      <a href="${CONTACT.zalo}" target="_blank" rel="noreferrer" title="Zalo" aria-label="Zalo"><img src="assets/icons8-zalo-48.png" alt=""></a>
     </div>
-      <button id="scrollTop" class="scroll-top" type="button" aria-label="Lên đầu trang">Top</button>
+      <button id="scrollTop" class="scroll-top" type="button" aria-label="Lên đầu trang"><img src="assets/icons8-scroll-to-top-50.png" alt=""></button>
   `);
   $("#modalBackdrop").addEventListener("click", (event) => {
     if (event.target.id === "modalBackdrop") event.currentTarget.classList.remove("show");
@@ -715,7 +724,7 @@ function productCard(product) {
         <div class="product-meta-line">${hasDeal(product) ? `<span class="old-price">${money.format(product.oldPrice)}</span>` : ""}<span>Đã bán ${product.sold}</span></div>
         <div class="card-foot">
           <a class="btn" href="product.html?id=${product.id}">Chi tiết</a>
-          <button class="btn primary" data-add="${product.id}" title="Thêm vào giỏ" type="button">+</button>
+          <button class="btn primary" data-add="${product.id}" title="Thêm vào giỏ" aria-label="Thêm vào giỏ" type="button">+</button>
         </div>
       </div>
     </article>
@@ -748,6 +757,7 @@ function initHome() {
   if (categoryGrid) {
     categoryGrid.innerHTML = CATEGORIES.map((category) => `
       <a class="category-tile" href="products.html?category=${category.id}">
+        <img src="${CATEGORY_ICONS[category.id]}" alt="">
         <span>${category.name}</span>
         <small>${PRODUCTS.filter((product) => product.category === category.id).length} sản phẩm</small>
       </a>
