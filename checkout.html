@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nova Shop | Thanh toán</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="index.html"><span class="brand-mark">N</span>Nova Shop</a>
+        <div class="nav-links">
+          <a href="index.html">Sản phẩm</a>
+          <a href="cart.html">Giỏ hàng <span class="cart-count">0</span></a>
+          <a class="active" href="checkout.html">Thanh toán</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-title">
+        <div class="container">
+          <h1>Thanh toán</h1>
+          <p>Nhập thông tin giao hàng, chọn phương thức và hoàn tất đơn hàng.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container checkout-layout">
+          <form id="checkoutForm" class="panel checkout-form">
+            <div class="field">
+              <label for="fullName">Họ tên</label>
+              <input id="fullName" name="fullName" class="input" required placeholder="Nguyễn Văn A">
+            </div>
+            <div class="field">
+              <label for="phone">Số điện thoại</label>
+              <input id="phone" name="phone" class="input" required pattern="[0-9]{9,12}" placeholder="0901234567">
+            </div>
+            <div class="field span-2">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" class="input" required placeholder="ban@example.com">
+            </div>
+            <div class="field span-2">
+              <label for="address">Địa chỉ</label>
+              <textarea id="address" name="address" class="input" required placeholder="Số nhà, đường, phường/xã, tỉnh/thành"></textarea>
+            </div>
+            <div class="field">
+              <label for="payment">Thanh toán</label>
+              <select id="payment" name="payment" class="input" required>
+                <option value="cod">COD</option>
+                <option value="bank">Chuyển khoản</option>
+                <option value="card">Thẻ nội địa</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="shipping">Giao hàng</label>
+              <select id="shipping" name="shipping" class="input" required>
+                <option value="standard">Tiêu chuẩn</option>
+                <option value="express">Nhanh</option>
+              </select>
+            </div>
+            <div class="field span-2">
+              <label for="note">Ghi chú</label>
+              <input id="note" name="note" class="input" placeholder="Thời gian nhận hàng mong muốn">
+            </div>
+            <div class="actions span-2">
+              <button class="btn primary" type="submit">Đặt hàng</button>
+              <a class="btn" href="cart.html">Quay lại giỏ</a>
+            </div>
+          </form>
+
+          <aside class="summary">
+            <h2>Đơn hàng</h2>
+            <div id="orderItems"></div>
+            <div class="total-row"><span>Tạm tính</span><strong class="js-subtotal"></strong></div>
+            <div class="total-row"><span>Vận chuyển</span><strong class="js-shipping"></strong></div>
+            <div class="total-row"><span>Ưu đãi</span><strong class="js-discount"></strong></div>
+            <div class="total-row grand"><span>Tổng cộng</span><strong class="js-grand"></strong></div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">Nova Shop demo · Thanh toán mô phỏng gọi server.</div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

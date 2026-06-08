@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nova Shop | Giỏ hàng</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="index.html"><span class="brand-mark">N</span>Nova Shop</a>
+        <div class="nav-links">
+          <a href="index.html">Sản phẩm</a>
+          <a class="active" href="cart.html">Giỏ hàng <span class="cart-count">0</span></a>
+          <a href="checkout.html">Thanh toán</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-title">
+        <div class="container">
+          <h1>Giỏ hàng</h1>
+          <p>Điều chỉnh số lượng, xóa sản phẩm và kiểm tra tổng tiền trước khi thanh toán.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container cart-layout">
+          <div id="cartList" class="cart-list"></div>
+          <aside class="summary">
+            <h2>Tóm tắt</h2>
+            <div class="total-row"><span>Tạm tính</span><strong class="js-subtotal"></strong></div>
+            <div class="total-row"><span>Vận chuyển</span><strong class="js-shipping"></strong></div>
+            <div class="total-row"><span>Ưu đãi</span><strong class="js-discount"></strong></div>
+            <div class="total-row grand"><span>Tổng cộng</span><strong class="js-grand"></strong></div>
+            <div class="actions" style="margin-top:16px">
+              <a id="checkoutButton" class="btn primary" href="checkout.html">Thanh toán</a>
+              <a class="btn" href="index.html">Mua thêm</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">Nova Shop demo · Giỏ hàng lưu trên trình duyệt.</div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

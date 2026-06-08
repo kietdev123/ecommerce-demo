@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nova Shop | Danh sách sản phẩm</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="index.html"><span class="brand-mark">N</span>Nova Shop</a>
+        <div class="nav-links">
+          <a class="active" href="index.html">Sản phẩm</a>
+          <a href="cart.html">Giỏ hàng <span class="cart-count">0</span></a>
+          <a href="checkout.html">Thanh toán</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <h1>Mua sắm nhanh, rõ ràng, thao tác như web thật.</h1>
+            <p>Danh mục sản phẩm có hình ảnh ngẫu nhiên, giỏ hàng lưu tự động và quy trình thanh toán mô phỏng gọi server với loading, toast và dialog.</p>
+            <div class="actions">
+              <a class="btn primary" href="#products">Xem sản phẩm</a>
+              <a class="btn" href="cart.html">Mở giỏ hàng</a>
+            </div>
+          </div>
+          <div class="hero-media" aria-label="Không gian mua sắm Nova Shop"></div>
+        </div>
+      </section>
+
+      <section id="products" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Danh sách sản phẩm</h2>
+              <p>Tìm kiếm, lọc danh mục, sắp xếp giá và thêm vào giỏ.</p>
+            </div>
+          </div>
+          <div class="filters">
+            <div class="field">
+              <label for="searchInput">Tìm kiếm</label>
+              <input id="searchInput" class="input" placeholder="Nhập tên sản phẩm">
+            </div>
+            <div class="field">
+              <label for="categoryFilter">Danh mục</label>
+              <select id="categoryFilter" class="input"></select>
+            </div>
+            <div class="field">
+              <label for="sortSelect">Sắp xếp</label>
+              <select id="sortSelect" class="input">
+                <option value="default">Mặc định</option>
+                <option value="asc">Giá tăng dần</option>
+                <option value="desc">Giá giảm dần</option>
+                <option value="rating">Đánh giá cao</option>
+              </select>
+            </div>
+          </div>
+          <div id="productGrid" class="product-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">Nova Shop demo · HTML, CSS responsive và JavaScript thuần.</div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
